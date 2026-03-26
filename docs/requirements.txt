@@ -1,0 +1,3 @@
+# Only needed if you have extra Python packages
+# Example:
+# sphinx>=6.3.0
