@@ -1,26 +1,23 @@
+# conf.py
 import os
 import sys
 sys.path.insert(0, os.path.abspath('.'))
 
-project = 'breezelineemail'
-author = 'breezelineemail'
-release = '0.1.0'
+project = 'Breezeline Login Account Guide'
+author = 'Independent Service Provider'
+release = '1.0'
 
-extensions = [
-    'sphinx.ext.autodoc',
-    'sphinx.ext.napoleon',
-]
+extensions = []
 
 templates_path = ['_templates']
-html_static_path = ['_static']
 exclude_patterns = []
 
-html_theme = 'sphinx_rtd_theme'
+html_theme = 'alabaster'
+html_static_path = ['_static']
 
-# Google Analytics
-html_js_files = [
-    'google_analytics.html',
-]
+# Use custom template
+html_theme_options = {}
+html_context = {}
 
 # Bing Webmaster verification
 html_context = {
