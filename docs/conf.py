@@ -19,9 +19,7 @@ html_static_path = ['_static']
 html_theme_options = {}
 html_context = {}
 
-# Bing Webmaster verification
-html_context = {
-    'metatags': """
-    <meta name="msvalidate.01" content="739245F5D54BCBF40AC056DC0CBF5710" />
-    """
+# Add custom layout for Google/Bing tracking
+html_sidebars = {
+    '**': ['globaltoc.html', 'searchbox.html']
 }
